@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Off-white background #F6F8FB */
+    --background: 0.974 0.006 240;
+    /* White cards */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.015 264;
+    /* Near-black headings #111827 */
+    --foreground: 0.18 0.015 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.015 264;
+    /* Primary blue #1D4ED8 */
+    --primary: 0.46 0.225 264;
+    --primary-foreground: 1 0 0;
+    /* Pale teal section bg #E9F6F5 */
+    --secondary: 0.96 0.022 185;
+    --secondary-foreground: 0.18 0.015 264;
+    --muted: 0.95 0.008 240;
+    /* Slate gray body #4B5563 */
+    --muted-foreground: 0.44 0.018 264;
+    /* Teal accent #0FA5A0 */
+    --accent: 0.61 0.12 185;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27;
+    --destructive-foreground: 1 0 0;
+    --border: 0.9 0.008 240;
+    --input: 0.9 0.008 240;
+    --ring: 0.46 0.225 264;
+
+    --chart-1: 0.46 0.225 264;
+    --chart-2: 0.61 0.12 185;
+    --chart-3: 0.646 0.222 41;
+    --chart-4: 0.828 0.189 84;
+    --chart-5: 0.769 0.188 70;
+
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.18 0.015 264;
+    --sidebar-primary: 0.46 0.225 264;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.96 0.022 185;
+    --sidebar-accent-foreground: 0.18 0.015 264;
+    --sidebar-border: 0.9 0.008 240;
+    --sidebar-ring: 0.46 0.225 264;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
